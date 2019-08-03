@@ -38,3 +38,7 @@ require 'serverspec/matcher/have_entry'
 require 'serverspec/matcher/have_site_application'
 require 'serverspec/matcher/have_site_bindings'
 require 'serverspec/matcher/have_virtual_dir'
+
+# user, group
+require 'serverspec/matcher/system_user'
+require 'serverspec/matcher/system_group'

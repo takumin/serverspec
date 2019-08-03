@@ -4,6 +4,10 @@ module Serverspec::Type
       @runner.check_user_exists(@name)
     end
 
+    def system_user?
+      @runner.check_user_is_system_user(@name)
+    end
+
     def belongs_to_group?(group)
       @runner.check_user_belongs_to_group(@name, group)
     end

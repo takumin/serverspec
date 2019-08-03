@@ -7,6 +7,10 @@ describe user('root') do
 end
 
 describe user('root') do
+  it { should system_user }
+end
+
+describe user('root') do
   it { should belong_to_group 'root' }
 end
 

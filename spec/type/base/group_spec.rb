@@ -7,5 +7,9 @@ describe group('root') do
 end
 
 describe group('root') do
+  it { should system_group }
+end
+
+describe group('root') do
   it { should have_gid 0 }
 end
